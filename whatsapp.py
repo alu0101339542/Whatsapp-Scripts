@@ -4,7 +4,7 @@ from threading import Timer
 
 #Time
 x=datetime.today() #Should probably refresh x and y after the event happens Poner dentro del while 1 quizas
-y=x.replace(day=x.day+1, hour=21, minute=32, second=30, microsecond=0)
+y=x.replace(day=x.day+1, hour=19, minute=39, second=30, microsecond=0)
 delta_t=y-x
 
 secs=delta_t.seconds+1
@@ -18,8 +18,8 @@ def tosend():
 driver = webdriver.Chrome('/home/dani/Documents/chromedriver')
 driver.get('https://web.whatsapp.com/')
 name = "Sergio"
-msg = "Hola"
-count = 200
+msg = "Como estas"
+count = 250
 #Scan the code before proceeding further
 input('Enter anything after scanning QR code')
 
